@@ -1,0 +1,20 @@
+{
+  "books": {
+    "title": "Books to Scrape — учебный полигон для парсинга",
+    "base_url": "https://books.toscrape.com/",
+    "start_url": "https://books.toscrape.com/catalogue/page-1.html",
+    "max_pages": 3,
+    "request_delay": 1.0,
+    "respect_robots": true,
+    "in_stock_text": "in stock",
+    "selectors": {
+      "item": "article.product_pod",
+      "link": "h3 a",
+      "title_attr": "title",
+      "price": "p.price_color",
+      "availability": "p.instock.availability",
+      "rating": "p.star-rating",
+      "next_page": "li.next a"
+    }
+  }
+}
